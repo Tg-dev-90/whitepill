@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>WHITE PILL</title>
+  <meta name="description" content="WHITE PILL — a minimalist meme coin. Clean one-page presentation." />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0b0b0b;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --card:#f7f7f8;
+      --accent:#10b981;
+      --shadow:0 14px 42px rgba(0,0,0,.08);
+      --radius:20px;
+      --max:1120px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(1000px 600px at 50% -20%, rgba(16,185,129,.10), transparent 60%), var(--bg);
+      color:var(--text);
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .wrap{max-width:var(--max);margin:0 auto;padding:20px 18px 56px}
+
+    header{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,.75);
+      border-bottom:1px solid var(--border);
+    }
+    .headerInner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(16,185,129,.15)}
+
+    .nav{display:flex;gap:10px;flex-wrap:wrap}
+    .nav a{
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#fff;
+      font-weight:800;
+      font-size:14px;
+    }
+    .nav a span{color:var(--muted)}
+
+    .hero{
+      margin-top:22px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background: linear-gradient(180deg,#fff 0%,#fafafa 100%);
+      box-shadow:var(--shadow);
+    }
+    .heroInner{
+      padding:28px 20px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:20px;
+      align-items:center;
+      text-align:center;
+    }
+
+    .logoBox{
+      width:170px;height:170px;margin:0 auto;
+      border-radius:28px;
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:0 14px 34px rgba(0,0,0,.1);
+      display:grid;place-items:center;
+    }
+    .logoBox img{padding:18px}
+
+    h1{
+      margin:0;
+      font-size:clamp(36px,6vw,64px);
+      letter-spacing:-1.2px;
+    }
+    .subtitle{
+      max-width:60ch;
+      margin:10px auto 0;
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.6;
+    }
+
+    .cta{
+      margin-top:18px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      padding:12px 18px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:#fff;
+      font-weight:900;
+      min-width:180px;
+      box-shadow:0 10px 24px rgba(0,0,0,.06);
+    }
+    .btn.primary{
+      background:rgba(16,185,129,.12);
+      border-color:rgba(16,185,129,.35);
+    }
+
+    .grid{
+      margin-top:18px;
+      display:grid;
+      gap:14px;
+      grid-template-columns:1fr;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px;
+    }
+    .card h2{margin:0 0 10px;font-size:18px}
+    .card p{margin:0;color:var(--muted);line-height:1.7;font-size:15px}
+
+    ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+    li{
+      display:flex;gap:12px;
+      background:#fff;
+      padding:12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+    }
+    li strong{display:block}
+    li span{color:var(--muted);font-size:14px}
+
+    footer{
+      margin-top:20px;
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    @media(min-width:900px){
+      .heroInner{grid-template-columns:220px 1fr;text-align:left}
+      .subtitle{margin-left:0}
+      .cta{justify-content:flex-start}
+      .grid{grid-template-columns:1.3fr 1fr}
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="headerInner">
+    <div class="brand"><div class="dot"></div>WHITE PILL</div>
+    <nav class="nav">
+      <a href="https://x.com/pepe67off?s=21" target="_blank">X <span>Twitter</span></a>
+      <a href="https://t.me/+QU29QLlHU0xjNTBk" target="_blank">TG <span>Telegram</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="heroInner">
+      <div class="logoBox">
+        <img src="logo.png" alt="WHITE PILL logo">
+      </div>
+      <div>
+        <h1>WHITE PILL</h1>
+        <p class="subtitle">
+          A minimalist meme coin built around clarity, simplicity, and strong visual identity.
+          No overpromises. No noise. Just a clean concept and a community that gets it.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://x.com/pepe67off?s=21" target="_blank">Join on X</a>
+          <a class="btn" href="https://t.me/+QU29QLlHU0xjNTBk" target="_blank">Join Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>What is WHITE PILL?</h2>
+      <p>
+        WHITE PILL is a meme project designed to be instantly recognizable and easy to understand.
+        It focuses on branding, presence, and culture rather than complex mechanics or narratives.
+      </p>
+      <ul>
+        <li><div>⚪</div><div><strong>Clean identity</strong><span>White, minimal, and timeless visual direction.</span></div></li>
+        <li><div>💊</div><div><strong>Meme-driven</strong><span>Community and creativity come first.</span></div></li>
+        <li><div>🧠</div><div><strong>Simple by design</strong><span>No unnecessary layers or confusion.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Community</h2>
+      <p>
+        WHITE PILL lives through its community. Updates, discussions, and memes all happen on
+        Twitter and Telegram.
+      </p>
+      <ul>
+        <li><div>X</div><div><strong>Twitter / X</strong><span>x.com/pepe67off</span></div></li>
+        <li><div>TG</div><div><strong>Telegram</strong><span>t.me/+QU29QLlHU0xjNTBk</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Disclaimer</strong>: This project is a meme. Nothing here is financial advice.</p>
+    <p>© <span id="y"></span> WHITE PILL</p>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
